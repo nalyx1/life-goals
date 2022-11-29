@@ -6,15 +6,15 @@ import Start from "../pages/start";
 const Stack = createNativeStackNavigator();
 
 export default function AllPages() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name="Start" component={Start} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
+                <Stack.Screen name="Start" component={Start} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
