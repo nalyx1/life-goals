@@ -1,10 +1,13 @@
 import { View, Text, Image, ScrollView, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import LifeStatus from "../../components/common/lifeStatus";
 import DefaultButton from "../../components/common/defaultButton";
 
 export default function Start() {
+    const navigation = useNavigation();
+
     const handleNavAppExplanation = () => {
-        console.log("Botao Funcionando");
+        navigation.navigate("AppExplanation");
     };
 
     return (
